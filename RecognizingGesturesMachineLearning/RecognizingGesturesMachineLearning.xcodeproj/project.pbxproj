@@ -1,0 +1,1427 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EE44BA3D2C0C77F4008D4ACA /* RecognizingGesturesMachineLearningApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE44BA3C2C0C77F4008D4ACA /* RecognizingGesturesMachineLearningApp.swift */; };
+		EE44BA3F2C0C77F4008D4ACA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE44BA3E2C0C77F4008D4ACA /* ContentView.swift */; };
+		EE44BA412C0C77F5008D4ACA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE44BA402C0C77F5008D4ACA /* Assets.xcassets */; };
+		EE44BA442C0C77F5008D4ACA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE44BA432C0C77F5008D4ACA /* Preview Assets.xcassets */; };
+		EE44BA512C0C78EE008D4ACA /* rockpaperscissors.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = EE44BA502C0C78EE008D4ACA /* rockpaperscissors.mlmodel */; };
+		EE44BA592C0C7936008D4ACA /* DebugApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE44BA582C0C7936008D4ACA /* DebugApp.swift */; };
+		EE44BA5B2C0C7936008D4ACA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE44BA5A2C0C7936008D4ACA /* ContentView.swift */; };
+		EE44BA5D2C0C7938008D4ACA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE44BA5C2C0C7938008D4ACA /* Assets.xcassets */; };
+		EE44BA602C0C7938008D4ACA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE44BA5F2C0C7938008D4ACA /* Preview Assets.xcassets */; };
+		EE44BA6B2C0C7968008D4ACA /* MLTrainingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE44BA6A2C0C7968008D4ACA /* MLTrainingApp.swift */; };
+		EE44BA6D2C0C7968008D4ACA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE44BA6C2C0C7968008D4ACA /* ContentView.swift */; };
+		EE44BA6F2C0C7969008D4ACA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE44BA6E2C0C7969008D4ACA /* Assets.xcassets */; };
+		EE44BA722C0C7969008D4ACA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE44BA712C0C7969008D4ACA /* Preview Assets.xcassets */; };
+		EE44BA802C0C927D008D4ACA /* Camera.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE44BA7F2C0C927D008D4ACA /* Camera.swift */; };
+		EE44BA822C0C9283008D4ACA /* MLCamera.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE44BA812C0C9283008D4ACA /* MLCamera.swift */; };
+		EE44BA842C0C92CE008D4ACA /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE44BA832C0C92CE008D4ACA /* AppModel.swift */; };
+		EE44BA862C0C92DB008D4ACA /* GameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE44BA852C0C92DB008D4ACA /* GameModel.swift */; };
+		EE44BA882C0C92EB008D4ACA /* GameMove.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE44BA872C0C92EB008D4ACA /* GameMove.swift */; };
+		EE44BA8A2C0C92FE008D4ACA /* HandPoseMLModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE44BA892C0C92FE008D4ACA /* HandPoseMLModel.swift */; };
+		EE44BA8C2C0C9356008D4ACA /* Metrics.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE44BA8B2C0C9356008D4ACA /* Metrics.swift */; };
+		EE44BA8E2C0C9368008D4ACA /* PhotoPickerDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE44BA8D2C0C9368008D4ACA /* PhotoPickerDataModel.swift */; };
+		EE44BA902C0C937D008D4ACA /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE44BA8F2C0C937D008D4ACA /* Colors.swift */; };
+		EE44BA922C0C939F008D4ACA /* HandPoseUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE44BA912C0C939F008D4ACA /* HandPoseUtils.swift */; };
+		EE44BA942C0C93AD008D4ACA /* Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE44BA932C0C93AD008D4ACA /* Styles.swift */; };
+		EE44BA962C0C93BB008D4ACA /* URLHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE44BA952C0C93BB008D4ACA /* URLHelper.swift */; };
+		EE44BA982C0C93DF008D4ACA /* CameraFrameOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE44BA972C0C93DF008D4ACA /* CameraFrameOverlay.swift */; };
+		EE44BA9A2C0C93F1008D4ACA /* HandPoseNodeOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE44BA992C0C93F1008D4ACA /* HandPoseNodeOverlay.swift */; };
+		EE44BA9C2C0C9405008D4ACA /* PredictionLabelOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE44BA9B2C0C9405008D4ACA /* PredictionLabelOverlay.swift */; };
+		EE44BA9E2C0C9466008D4ACA /* ViewfinderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE44BA9D2C0C9466008D4ACA /* ViewfinderView.swift */; };
+		EE44BAA02C0C9481008D4ACA /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE44BA9F2C0C9481008D4ACA /* CameraView.swift */; };
+		EE44BAA22C0C9498008D4ACA /* MoveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE44BAA12C0C9498008D4ACA /* MoveView.swift */; };
+		EE44BAA42C0C94AB008D4ACA /* RPSGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE44BAA32C0C94AB008D4ACA /* RPSGameView.swift */; };
+		EE44BAA62C0C94D4008D4ACA /* MLModelListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE44BAA52C0C94D4008D4ACA /* MLModelListView.swift */; };
+		EE44BAA82C0C9505008D4ACA /* Dataset.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE44BAA72C0C9505008D4ACA /* Dataset.swift */; };
+		EE44BAAA2C0C9511008D4ACA /* HandPoseTrainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE44BAA92C0C9511008D4ACA /* HandPoseTrainer.swift */; };
+		EE44BAAC2C0C951E008D4ACA /* TrainerDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE44BAAB2C0C951E008D4ACA /* TrainerDataModel.swift */; };
+		EE44BB672C0C9564008D4ACA /* HandPoseTrainerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE44BB662C0C9564008D4ACA /* HandPoseTrainerExtension.swift */; };
+		EE44BB692C0C9573008D4ACA /* CellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE44BB682C0C9573008D4ACA /* CellView.swift */; };
+		EE44BB6B2C0C9580008D4ACA /* DatasetImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE44BB6A2C0C9580008D4ACA /* DatasetImage.swift */; };
+		EE44BB6D2C0C958B008D4ACA /* TrainingDatasetCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE44BB6C2C0C958B008D4ACA /* TrainingDatasetCell.swift */; };
+		EE44BB6F2C0C9598008D4ACA /* TrainingDatasetImageGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE44BB6E2C0C9598008D4ACA /* TrainingDatasetImageGrid.swift */; };
+		EE44BB712C0C95A8008D4ACA /* TrainingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE44BB702C0C95A8008D4ACA /* TrainingView.swift */; };
+		EE44BB732C0C95B7008D4ACA /* ValidationDatasetImageGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE44BB722C0C95B7008D4ACA /* ValidationDatasetImageGrid.swift */; };
+		EE44BB742C0C95DE008D4ACA /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE44BA832C0C92CE008D4ACA /* AppModel.swift */; };
+		EE44BB752C0C95DE008D4ACA /* GameMove.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE44BA872C0C92EB008D4ACA /* GameMove.swift */; };
+		EE44BB762C0C95DE008D4ACA /* HandPoseMLModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE44BA892C0C92FE008D4ACA /* HandPoseMLModel.swift */; };
+		EE44BB772C0C95DE008D4ACA /* Metrics.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE44BA8B2C0C9356008D4ACA /* Metrics.swift */; };
+		EE44BB782C0C95DE008D4ACA /* GameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE44BA852C0C92DB008D4ACA /* GameModel.swift */; };
+		EE44BB792C0C95DE008D4ACA /* PhotoPickerDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE44BA8D2C0C9368008D4ACA /* PhotoPickerDataModel.swift */; };
+		EE44BB7A2C0C95DE008D4ACA /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE44BA832C0C92CE008D4ACA /* AppModel.swift */; };
+		EE44BB7B2C0C95DE008D4ACA /* GameMove.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE44BA872C0C92EB008D4ACA /* GameMove.swift */; };
+		EE44BB7C2C0C95DE008D4ACA /* HandPoseMLModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE44BA892C0C92FE008D4ACA /* HandPoseMLModel.swift */; };
+		EE44BB7D2C0C95DE008D4ACA /* Metrics.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE44BA8B2C0C9356008D4ACA /* Metrics.swift */; };
+		EE44BB7E2C0C95DE008D4ACA /* GameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE44BA852C0C92DB008D4ACA /* GameModel.swift */; };
+		EE44BB7F2C0C95DE008D4ACA /* PhotoPickerDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE44BA8D2C0C9368008D4ACA /* PhotoPickerDataModel.swift */; };
+		EE44BB822C0C95E3008D4ACA /* MLCamera.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE44BA812C0C9283008D4ACA /* MLCamera.swift */; };
+		EE44BB832C0C95E3008D4ACA /* Camera.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE44BA7F2C0C927D008D4ACA /* Camera.swift */; };
+		EE44BB842C0C95E8008D4ACA /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE44BA8F2C0C937D008D4ACA /* Colors.swift */; };
+		EE44BB852C0C95E8008D4ACA /* Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE44BA932C0C93AD008D4ACA /* Styles.swift */; };
+		EE44BB862C0C95E8008D4ACA /* URLHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE44BA952C0C93BB008D4ACA /* URLHelper.swift */; };
+		EE44BB872C0C95E8008D4ACA /* HandPoseUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE44BA912C0C939F008D4ACA /* HandPoseUtils.swift */; };
+		EE44BB882C0C95E9008D4ACA /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE44BA8F2C0C937D008D4ACA /* Colors.swift */; };
+		EE44BB892C0C95E9008D4ACA /* Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE44BA932C0C93AD008D4ACA /* Styles.swift */; };
+		EE44BB8A2C0C95E9008D4ACA /* URLHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE44BA952C0C93BB008D4ACA /* URLHelper.swift */; };
+		EE44BB8B2C0C95E9008D4ACA /* HandPoseUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE44BA912C0C939F008D4ACA /* HandPoseUtils.swift */; };
+		EE44BB8C2C0C9637008D4ACA /* HandPoseNodeOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE44BA992C0C93F1008D4ACA /* HandPoseNodeOverlay.swift */; };
+		EE44BB8D2C0C9637008D4ACA /* CameraFrameOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE44BA972C0C93DF008D4ACA /* CameraFrameOverlay.swift */; };
+		EE44BB8E2C0C9637008D4ACA /* ViewfinderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE44BA9D2C0C9466008D4ACA /* ViewfinderView.swift */; };
+		EE44BB8F2C0C9637008D4ACA /* PredictionLabelOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE44BA9B2C0C9405008D4ACA /* PredictionLabelOverlay.swift */; };
+		EE44BB902C0C965E008D4ACA /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE44BA9F2C0C9481008D4ACA /* CameraView.swift */; };
+		EE44BB912C0C969E008D4ACA /* MLCamera.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE44BA812C0C9283008D4ACA /* MLCamera.swift */; };
+		EE44BB922C0C969E008D4ACA /* Camera.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE44BA7F2C0C927D008D4ACA /* Camera.swift */; };
+		EE44BBFB2C0C974F008D4ACA /* paper.1.png in Resources */ = {isa = PBXBuildFile; fileRef = EE44BB932C0C974F008D4ACA /* paper.1.png */; };
+		EE44BBFC2C0C974F008D4ACA /* paper.2.png in Resources */ = {isa = PBXBuildFile; fileRef = EE44BB942C0C974F008D4ACA /* paper.2.png */; };
+		EE44BBFD2C0C974F008D4ACA /* paper.3.png in Resources */ = {isa = PBXBuildFile; fileRef = EE44BB952C0C974F008D4ACA /* paper.3.png */; };
+		EE44BBFE2C0C974F008D4ACA /* paper.4.png in Resources */ = {isa = PBXBuildFile; fileRef = EE44BB962C0C974F008D4ACA /* paper.4.png */; };
+		EE44BBFF2C0C974F008D4ACA /* paper.5.png in Resources */ = {isa = PBXBuildFile; fileRef = EE44BB972C0C974F008D4ACA /* paper.5.png */; };
+		EE44BC002C0C974F008D4ACA /* paper.6.png in Resources */ = {isa = PBXBuildFile; fileRef = EE44BB982C0C974F008D4ACA /* paper.6.png */; };
+		EE44BC012C0C974F008D4ACA /* paper.7.png in Resources */ = {isa = PBXBuildFile; fileRef = EE44BB992C0C974F008D4ACA /* paper.7.png */; };
+		EE44BC022C0C974F008D4ACA /* rock.1.png in Resources */ = {isa = PBXBuildFile; fileRef = EE44BB9B2C0C974F008D4ACA /* rock.1.png */; };
+		EE44BC032C0C974F008D4ACA /* rock.2.png in Resources */ = {isa = PBXBuildFile; fileRef = EE44BB9C2C0C974F008D4ACA /* rock.2.png */; };
+		EE44BC042C0C974F008D4ACA /* rock.3.png in Resources */ = {isa = PBXBuildFile; fileRef = EE44BB9D2C0C974F008D4ACA /* rock.3.png */; };
+		EE44BC052C0C974F008D4ACA /* rock.4.PNG in Resources */ = {isa = PBXBuildFile; fileRef = EE44BB9E2C0C974F008D4ACA /* rock.4.PNG */; };
+		EE44BC062C0C974F008D4ACA /* rock.5.png in Resources */ = {isa = PBXBuildFile; fileRef = EE44BB9F2C0C974F008D4ACA /* rock.5.png */; };
+		EE44BC072C0C974F008D4ACA /* rock.6.png in Resources */ = {isa = PBXBuildFile; fileRef = EE44BBA02C0C974F008D4ACA /* rock.6.png */; };
+		EE44BC082C0C974F008D4ACA /* rock.7.png in Resources */ = {isa = PBXBuildFile; fileRef = EE44BBA12C0C974F008D4ACA /* rock.7.png */; };
+		EE44BC092C0C974F008D4ACA /* scissors.1.png in Resources */ = {isa = PBXBuildFile; fileRef = EE44BBA32C0C974F008D4ACA /* scissors.1.png */; };
+		EE44BC0A2C0C974F008D4ACA /* scissors.2.png in Resources */ = {isa = PBXBuildFile; fileRef = EE44BBA42C0C974F008D4ACA /* scissors.2.png */; };
+		EE44BC0B2C0C974F008D4ACA /* scissors.3.png in Resources */ = {isa = PBXBuildFile; fileRef = EE44BBA52C0C974F008D4ACA /* scissors.3.png */; };
+		EE44BC0C2C0C974F008D4ACA /* scissors.4.png in Resources */ = {isa = PBXBuildFile; fileRef = EE44BBA62C0C974F008D4ACA /* scissors.4.png */; };
+		EE44BC0D2C0C974F008D4ACA /* scissors.5.png in Resources */ = {isa = PBXBuildFile; fileRef = EE44BBA72C0C974F008D4ACA /* scissors.5.png */; };
+		EE44BC0E2C0C974F008D4ACA /* scissors.6.png in Resources */ = {isa = PBXBuildFile; fileRef = EE44BBA82C0C974F008D4ACA /* scissors.6.png */; };
+		EE44BC0F2C0C974F008D4ACA /* scissors.7.png in Resources */ = {isa = PBXBuildFile; fileRef = EE44BBA92C0C974F008D4ACA /* scissors.7.png */; };
+		EE44BC102C0C974F008D4ACA /* paper.1.png in Resources */ = {isa = PBXBuildFile; fileRef = EE44BBAC2C0C974F008D4ACA /* paper.1.png */; };
+		EE44BC112C0C974F008D4ACA /* paper.2.png in Resources */ = {isa = PBXBuildFile; fileRef = EE44BBAD2C0C974F008D4ACA /* paper.2.png */; };
+		EE44BC122C0C974F008D4ACA /* paper.3.png in Resources */ = {isa = PBXBuildFile; fileRef = EE44BBAE2C0C974F008D4ACA /* paper.3.png */; };
+		EE44BC132C0C974F008D4ACA /* paper.4.png in Resources */ = {isa = PBXBuildFile; fileRef = EE44BBAF2C0C974F008D4ACA /* paper.4.png */; };
+		EE44BC142C0C974F008D4ACA /* paper.5.png in Resources */ = {isa = PBXBuildFile; fileRef = EE44BBB02C0C974F008D4ACA /* paper.5.png */; };
+		EE44BC152C0C974F008D4ACA /* paper.6.png in Resources */ = {isa = PBXBuildFile; fileRef = EE44BBB12C0C974F008D4ACA /* paper.6.png */; };
+		EE44BC162C0C974F008D4ACA /* paper.7.png in Resources */ = {isa = PBXBuildFile; fileRef = EE44BBB22C0C974F008D4ACA /* paper.7.png */; };
+		EE44BC172C0C974F008D4ACA /* rock.1.png in Resources */ = {isa = PBXBuildFile; fileRef = EE44BBB42C0C974F008D4ACA /* rock.1.png */; };
+		EE44BC182C0C974F008D4ACA /* rock.2.png in Resources */ = {isa = PBXBuildFile; fileRef = EE44BBB52C0C974F008D4ACA /* rock.2.png */; };
+		EE44BC192C0C974F008D4ACA /* rock.3.png in Resources */ = {isa = PBXBuildFile; fileRef = EE44BBB62C0C974F008D4ACA /* rock.3.png */; };
+		EE44BC1A2C0C974F008D4ACA /* rock.4.png in Resources */ = {isa = PBXBuildFile; fileRef = EE44BBB72C0C974F008D4ACA /* rock.4.png */; };
+		EE44BC1B2C0C974F008D4ACA /* rock.5.png in Resources */ = {isa = PBXBuildFile; fileRef = EE44BBB82C0C974F008D4ACA /* rock.5.png */; };
+		EE44BC1C2C0C974F008D4ACA /* rock.6.png in Resources */ = {isa = PBXBuildFile; fileRef = EE44BBB92C0C974F008D4ACA /* rock.6.png */; };
+		EE44BC1D2C0C974F008D4ACA /* rock.7.png in Resources */ = {isa = PBXBuildFile; fileRef = EE44BBBA2C0C974F008D4ACA /* rock.7.png */; };
+		EE44BC1E2C0C974F008D4ACA /* scissors.1.png in Resources */ = {isa = PBXBuildFile; fileRef = EE44BBBC2C0C974F008D4ACA /* scissors.1.png */; };
+		EE44BC1F2C0C974F008D4ACA /* scissors.2.png in Resources */ = {isa = PBXBuildFile; fileRef = EE44BBBD2C0C974F008D4ACA /* scissors.2.png */; };
+		EE44BC202C0C974F008D4ACA /* scissors.3.png in Resources */ = {isa = PBXBuildFile; fileRef = EE44BBBE2C0C974F008D4ACA /* scissors.3.png */; };
+		EE44BC212C0C974F008D4ACA /* scissors.4.png in Resources */ = {isa = PBXBuildFile; fileRef = EE44BBBF2C0C974F008D4ACA /* scissors.4.png */; };
+		EE44BC222C0C974F008D4ACA /* scissors.5.png in Resources */ = {isa = PBXBuildFile; fileRef = EE44BBC02C0C974F008D4ACA /* scissors.5.png */; };
+		EE44BC232C0C974F008D4ACA /* scissors.6.png in Resources */ = {isa = PBXBuildFile; fileRef = EE44BBC12C0C974F008D4ACA /* scissors.6.png */; };
+		EE44BC242C0C974F008D4ACA /* scissors.7.png in Resources */ = {isa = PBXBuildFile; fileRef = EE44BBC22C0C974F008D4ACA /* scissors.7.png */; };
+		EE44BC252C0C974F008D4ACA /* paper.1.png in Resources */ = {isa = PBXBuildFile; fileRef = EE44BBC52C0C974F008D4ACA /* paper.1.png */; };
+		EE44BC262C0C974F008D4ACA /* paper.2.png in Resources */ = {isa = PBXBuildFile; fileRef = EE44BBC62C0C974F008D4ACA /* paper.2.png */; };
+		EE44BC272C0C974F008D4ACA /* paper.3.png in Resources */ = {isa = PBXBuildFile; fileRef = EE44BBC72C0C974F008D4ACA /* paper.3.png */; };
+		EE44BC282C0C974F008D4ACA /* paper.4.png in Resources */ = {isa = PBXBuildFile; fileRef = EE44BBC82C0C974F008D4ACA /* paper.4.png */; };
+		EE44BC292C0C974F008D4ACA /* paper.5.png in Resources */ = {isa = PBXBuildFile; fileRef = EE44BBC92C0C974F008D4ACA /* paper.5.png */; };
+		EE44BC2A2C0C974F008D4ACA /* paper.6.png in Resources */ = {isa = PBXBuildFile; fileRef = EE44BBCA2C0C974F008D4ACA /* paper.6.png */; };
+		EE44BC2B2C0C974F008D4ACA /* paper.7.png in Resources */ = {isa = PBXBuildFile; fileRef = EE44BBCB2C0C974F008D4ACA /* paper.7.png */; };
+		EE44BC2C2C0C974F008D4ACA /* rock.1.png in Resources */ = {isa = PBXBuildFile; fileRef = EE44BBCD2C0C974F008D4ACA /* rock.1.png */; };
+		EE44BC2D2C0C974F008D4ACA /* rock.2.png in Resources */ = {isa = PBXBuildFile; fileRef = EE44BBCE2C0C974F008D4ACA /* rock.2.png */; };
+		EE44BC2E2C0C974F008D4ACA /* rock.3.png in Resources */ = {isa = PBXBuildFile; fileRef = EE44BBCF2C0C974F008D4ACA /* rock.3.png */; };
+		EE44BC2F2C0C974F008D4ACA /* rock.4.png in Resources */ = {isa = PBXBuildFile; fileRef = EE44BBD02C0C974F008D4ACA /* rock.4.png */; };
+		EE44BC302C0C974F008D4ACA /* rock.5.png in Resources */ = {isa = PBXBuildFile; fileRef = EE44BBD12C0C974F008D4ACA /* rock.5.png */; };
+		EE44BC312C0C974F008D4ACA /* rock.6.png in Resources */ = {isa = PBXBuildFile; fileRef = EE44BBD22C0C974F008D4ACA /* rock.6.png */; };
+		EE44BC322C0C974F008D4ACA /* rock.7.png in Resources */ = {isa = PBXBuildFile; fileRef = EE44BBD32C0C974F008D4ACA /* rock.7.png */; };
+		EE44BC332C0C974F008D4ACA /* scissors.1.png in Resources */ = {isa = PBXBuildFile; fileRef = EE44BBD52C0C974F008D4ACA /* scissors.1.png */; };
+		EE44BC342C0C974F008D4ACA /* scissors.2.png in Resources */ = {isa = PBXBuildFile; fileRef = EE44BBD62C0C974F008D4ACA /* scissors.2.png */; };
+		EE44BC352C0C974F008D4ACA /* scissors.3.png in Resources */ = {isa = PBXBuildFile; fileRef = EE44BBD72C0C974F008D4ACA /* scissors.3.png */; };
+		EE44BC362C0C974F008D4ACA /* scissors.4.png in Resources */ = {isa = PBXBuildFile; fileRef = EE44BBD82C0C974F008D4ACA /* scissors.4.png */; };
+		EE44BC372C0C974F008D4ACA /* scissors.5.png in Resources */ = {isa = PBXBuildFile; fileRef = EE44BBD92C0C974F008D4ACA /* scissors.5.png */; };
+		EE44BC382C0C974F008D4ACA /* scissors.6.png in Resources */ = {isa = PBXBuildFile; fileRef = EE44BBDA2C0C974F008D4ACA /* scissors.6.png */; };
+		EE44BC392C0C974F008D4ACA /* scissors.7.png in Resources */ = {isa = PBXBuildFile; fileRef = EE44BBDB2C0C974F008D4ACA /* scissors.7.png */; };
+		EE44BC3A2C0C974F008D4ACA /* paper.1.png in Resources */ = {isa = PBXBuildFile; fileRef = EE44BBDF2C0C974F008D4ACA /* paper.1.png */; };
+		EE44BC3B2C0C974F008D4ACA /* paper.2.png in Resources */ = {isa = PBXBuildFile; fileRef = EE44BBE02C0C974F008D4ACA /* paper.2.png */; };
+		EE44BC3C2C0C974F008D4ACA /* paper.3.png in Resources */ = {isa = PBXBuildFile; fileRef = EE44BBE12C0C974F008D4ACA /* paper.3.png */; };
+		EE44BC3D2C0C974F008D4ACA /* rock.1.png in Resources */ = {isa = PBXBuildFile; fileRef = EE44BBE32C0C974F008D4ACA /* rock.1.png */; };
+		EE44BC3E2C0C974F008D4ACA /* rock.2.png in Resources */ = {isa = PBXBuildFile; fileRef = EE44BBE42C0C974F008D4ACA /* rock.2.png */; };
+		EE44BC3F2C0C974F008D4ACA /* rock.3.png in Resources */ = {isa = PBXBuildFile; fileRef = EE44BBE52C0C974F008D4ACA /* rock.3.png */; };
+		EE44BC402C0C974F008D4ACA /* scissors.1.png in Resources */ = {isa = PBXBuildFile; fileRef = EE44BBE72C0C974F008D4ACA /* scissors.1.png */; };
+		EE44BC412C0C974F008D4ACA /* scissors.2.png in Resources */ = {isa = PBXBuildFile; fileRef = EE44BBE82C0C974F008D4ACA /* scissors.2.png */; };
+		EE44BC422C0C974F008D4ACA /* scissors.3.png in Resources */ = {isa = PBXBuildFile; fileRef = EE44BBE92C0C974F008D4ACA /* scissors.3.png */; };
+		EE44BC432C0C974F008D4ACA /* paper.1.png in Resources */ = {isa = PBXBuildFile; fileRef = EE44BBEC2C0C974F008D4ACA /* paper.1.png */; };
+		EE44BC442C0C974F008D4ACA /* paper.2.png in Resources */ = {isa = PBXBuildFile; fileRef = EE44BBED2C0C974F008D4ACA /* paper.2.png */; };
+		EE44BC452C0C974F008D4ACA /* paper.3.png in Resources */ = {isa = PBXBuildFile; fileRef = EE44BBEE2C0C974F008D4ACA /* paper.3.png */; };
+		EE44BC462C0C974F008D4ACA /* rock.1.png in Resources */ = {isa = PBXBuildFile; fileRef = EE44BBF02C0C974F008D4ACA /* rock.1.png */; };
+		EE44BC472C0C974F008D4ACA /* rock.2.png in Resources */ = {isa = PBXBuildFile; fileRef = EE44BBF12C0C974F008D4ACA /* rock.2.png */; };
+		EE44BC482C0C974F008D4ACA /* scissors.1.png in Resources */ = {isa = PBXBuildFile; fileRef = EE44BBF32C0C974F008D4ACA /* scissors.1.png */; };
+		EE44BC492C0C974F008D4ACA /* scissors.2.png in Resources */ = {isa = PBXBuildFile; fileRef = EE44BBF42C0C974F008D4ACA /* scissors.2.png */; };
+		EE44BC4A2C0C974F008D4ACA /* scissors.3.png in Resources */ = {isa = PBXBuildFile; fileRef = EE44BBF52C0C974F008D4ACA /* scissors.3.png */; };
+		EE44BC4B2C0C974F008D4ACA /* scissors.4.png in Resources */ = {isa = PBXBuildFile; fileRef = EE44BBF62C0C974F008D4ACA /* scissors.4.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		EE44BA392C0C77F4008D4ACA /* RecognizingGesturesMachineLearning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RecognizingGesturesMachineLearning.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE44BA3C2C0C77F4008D4ACA /* RecognizingGesturesMachineLearningApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecognizingGesturesMachineLearningApp.swift; sourceTree = "<group>"; };
+		EE44BA3E2C0C77F4008D4ACA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		EE44BA402C0C77F5008D4ACA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EE44BA432C0C77F5008D4ACA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		EE44BA502C0C78EE008D4ACA /* rockpaperscissors.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = rockpaperscissors.mlmodel; path = "../../../../../../Get Started with Machine Learning.swiftpm/App/Resources/rockpaperscissors.mlmodel"; sourceTree = "<group>"; };
+		EE44BA562C0C7936008D4ACA /* Debug.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Debug.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE44BA582C0C7936008D4ACA /* DebugApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugApp.swift; sourceTree = "<group>"; };
+		EE44BA5A2C0C7936008D4ACA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		EE44BA5C2C0C7938008D4ACA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EE44BA5F2C0C7938008D4ACA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		EE44BA682C0C7967008D4ACA /* MLTraining.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MLTraining.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE44BA6A2C0C7968008D4ACA /* MLTrainingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MLTrainingApp.swift; sourceTree = "<group>"; };
+		EE44BA6C2C0C7968008D4ACA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		EE44BA6E2C0C7969008D4ACA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EE44BA712C0C7969008D4ACA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		EE44BA732C0C7969008D4ACA /* MLTraining.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MLTraining.entitlements; sourceTree = "<group>"; };
+		EE44BA7F2C0C927D008D4ACA /* Camera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Camera.swift; sourceTree = "<group>"; };
+		EE44BA812C0C9283008D4ACA /* MLCamera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MLCamera.swift; sourceTree = "<group>"; };
+		EE44BA832C0C92CE008D4ACA /* AppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
+		EE44BA852C0C92DB008D4ACA /* GameModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModel.swift; sourceTree = "<group>"; };
+		EE44BA872C0C92EB008D4ACA /* GameMove.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameMove.swift; sourceTree = "<group>"; };
+		EE44BA892C0C92FE008D4ACA /* HandPoseMLModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandPoseMLModel.swift; sourceTree = "<group>"; };
+		EE44BA8B2C0C9356008D4ACA /* Metrics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Metrics.swift; sourceTree = "<group>"; };
+		EE44BA8D2C0C9368008D4ACA /* PhotoPickerDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPickerDataModel.swift; sourceTree = "<group>"; };
+		EE44BA8F2C0C937D008D4ACA /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		EE44BA912C0C939F008D4ACA /* HandPoseUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandPoseUtils.swift; sourceTree = "<group>"; };
+		EE44BA932C0C93AD008D4ACA /* Styles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Styles.swift; sourceTree = "<group>"; };
+		EE44BA952C0C93BB008D4ACA /* URLHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLHelper.swift; sourceTree = "<group>"; };
+		EE44BA972C0C93DF008D4ACA /* CameraFrameOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraFrameOverlay.swift; sourceTree = "<group>"; };
+		EE44BA992C0C93F1008D4ACA /* HandPoseNodeOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandPoseNodeOverlay.swift; sourceTree = "<group>"; };
+		EE44BA9B2C0C9405008D4ACA /* PredictionLabelOverlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PredictionLabelOverlay.swift; sourceTree = "<group>"; };
+		EE44BA9D2C0C9466008D4ACA /* ViewfinderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewfinderView.swift; sourceTree = "<group>"; };
+		EE44BA9F2C0C9481008D4ACA /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
+		EE44BAA12C0C9498008D4ACA /* MoveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoveView.swift; sourceTree = "<group>"; };
+		EE44BAA32C0C94AB008D4ACA /* RPSGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RPSGameView.swift; sourceTree = "<group>"; };
+		EE44BAA52C0C94D4008D4ACA /* MLModelListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MLModelListView.swift; sourceTree = "<group>"; };
+		EE44BAA72C0C9505008D4ACA /* Dataset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dataset.swift; sourceTree = "<group>"; };
+		EE44BAA92C0C9511008D4ACA /* HandPoseTrainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandPoseTrainer.swift; sourceTree = "<group>"; };
+		EE44BAAB2C0C951E008D4ACA /* TrainerDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainerDataModel.swift; sourceTree = "<group>"; };
+		EE44BB662C0C9564008D4ACA /* HandPoseTrainerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HandPoseTrainerExtension.swift; sourceTree = "<group>"; };
+		EE44BB682C0C9573008D4ACA /* CellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellView.swift; sourceTree = "<group>"; };
+		EE44BB6A2C0C9580008D4ACA /* DatasetImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatasetImage.swift; sourceTree = "<group>"; };
+		EE44BB6C2C0C958B008D4ACA /* TrainingDatasetCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingDatasetCell.swift; sourceTree = "<group>"; };
+		EE44BB6E2C0C9598008D4ACA /* TrainingDatasetImageGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingDatasetImageGrid.swift; sourceTree = "<group>"; };
+		EE44BB702C0C95A8008D4ACA /* TrainingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingView.swift; sourceTree = "<group>"; };
+		EE44BB722C0C95B7008D4ACA /* ValidationDatasetImageGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationDatasetImageGrid.swift; sourceTree = "<group>"; };
+		EE44BB932C0C974F008D4ACA /* paper.1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = paper.1.png; sourceTree = "<group>"; };
+		EE44BB942C0C974F008D4ACA /* paper.2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = paper.2.png; sourceTree = "<group>"; };
+		EE44BB952C0C974F008D4ACA /* paper.3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = paper.3.png; sourceTree = "<group>"; };
+		EE44BB962C0C974F008D4ACA /* paper.4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = paper.4.png; sourceTree = "<group>"; };
+		EE44BB972C0C974F008D4ACA /* paper.5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = paper.5.png; sourceTree = "<group>"; };
+		EE44BB982C0C974F008D4ACA /* paper.6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = paper.6.png; sourceTree = "<group>"; };
+		EE44BB992C0C974F008D4ACA /* paper.7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = paper.7.png; sourceTree = "<group>"; };
+		EE44BB9B2C0C974F008D4ACA /* rock.1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rock.1.png; sourceTree = "<group>"; };
+		EE44BB9C2C0C974F008D4ACA /* rock.2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rock.2.png; sourceTree = "<group>"; };
+		EE44BB9D2C0C974F008D4ACA /* rock.3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rock.3.png; sourceTree = "<group>"; };
+		EE44BB9E2C0C974F008D4ACA /* rock.4.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rock.4.PNG; sourceTree = "<group>"; };
+		EE44BB9F2C0C974F008D4ACA /* rock.5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rock.5.png; sourceTree = "<group>"; };
+		EE44BBA02C0C974F008D4ACA /* rock.6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rock.6.png; sourceTree = "<group>"; };
+		EE44BBA12C0C974F008D4ACA /* rock.7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rock.7.png; sourceTree = "<group>"; };
+		EE44BBA32C0C974F008D4ACA /* scissors.1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = scissors.1.png; sourceTree = "<group>"; };
+		EE44BBA42C0C974F008D4ACA /* scissors.2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = scissors.2.png; sourceTree = "<group>"; };
+		EE44BBA52C0C974F008D4ACA /* scissors.3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = scissors.3.png; sourceTree = "<group>"; };
+		EE44BBA62C0C974F008D4ACA /* scissors.4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = scissors.4.png; sourceTree = "<group>"; };
+		EE44BBA72C0C974F008D4ACA /* scissors.5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = scissors.5.png; sourceTree = "<group>"; };
+		EE44BBA82C0C974F008D4ACA /* scissors.6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = scissors.6.png; sourceTree = "<group>"; };
+		EE44BBA92C0C974F008D4ACA /* scissors.7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = scissors.7.png; sourceTree = "<group>"; };
+		EE44BBAC2C0C974F008D4ACA /* paper.1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = paper.1.png; sourceTree = "<group>"; };
+		EE44BBAD2C0C974F008D4ACA /* paper.2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = paper.2.png; sourceTree = "<group>"; };
+		EE44BBAE2C0C974F008D4ACA /* paper.3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = paper.3.png; sourceTree = "<group>"; };
+		EE44BBAF2C0C974F008D4ACA /* paper.4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = paper.4.png; sourceTree = "<group>"; };
+		EE44BBB02C0C974F008D4ACA /* paper.5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = paper.5.png; sourceTree = "<group>"; };
+		EE44BBB12C0C974F008D4ACA /* paper.6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = paper.6.png; sourceTree = "<group>"; };
+		EE44BBB22C0C974F008D4ACA /* paper.7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = paper.7.png; sourceTree = "<group>"; };
+		EE44BBB42C0C974F008D4ACA /* rock.1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rock.1.png; sourceTree = "<group>"; };
+		EE44BBB52C0C974F008D4ACA /* rock.2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rock.2.png; sourceTree = "<group>"; };
+		EE44BBB62C0C974F008D4ACA /* rock.3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rock.3.png; sourceTree = "<group>"; };
+		EE44BBB72C0C974F008D4ACA /* rock.4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rock.4.png; sourceTree = "<group>"; };
+		EE44BBB82C0C974F008D4ACA /* rock.5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rock.5.png; sourceTree = "<group>"; };
+		EE44BBB92C0C974F008D4ACA /* rock.6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rock.6.png; sourceTree = "<group>"; };
+		EE44BBBA2C0C974F008D4ACA /* rock.7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rock.7.png; sourceTree = "<group>"; };
+		EE44BBBC2C0C974F008D4ACA /* scissors.1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = scissors.1.png; sourceTree = "<group>"; };
+		EE44BBBD2C0C974F008D4ACA /* scissors.2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = scissors.2.png; sourceTree = "<group>"; };
+		EE44BBBE2C0C974F008D4ACA /* scissors.3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = scissors.3.png; sourceTree = "<group>"; };
+		EE44BBBF2C0C974F008D4ACA /* scissors.4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = scissors.4.png; sourceTree = "<group>"; };
+		EE44BBC02C0C974F008D4ACA /* scissors.5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = scissors.5.png; sourceTree = "<group>"; };
+		EE44BBC12C0C974F008D4ACA /* scissors.6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = scissors.6.png; sourceTree = "<group>"; };
+		EE44BBC22C0C974F008D4ACA /* scissors.7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = scissors.7.png; sourceTree = "<group>"; };
+		EE44BBC52C0C974F008D4ACA /* paper.1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = paper.1.png; sourceTree = "<group>"; };
+		EE44BBC62C0C974F008D4ACA /* paper.2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = paper.2.png; sourceTree = "<group>"; };
+		EE44BBC72C0C974F008D4ACA /* paper.3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = paper.3.png; sourceTree = "<group>"; };
+		EE44BBC82C0C974F008D4ACA /* paper.4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = paper.4.png; sourceTree = "<group>"; };
+		EE44BBC92C0C974F008D4ACA /* paper.5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = paper.5.png; sourceTree = "<group>"; };
+		EE44BBCA2C0C974F008D4ACA /* paper.6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = paper.6.png; sourceTree = "<group>"; };
+		EE44BBCB2C0C974F008D4ACA /* paper.7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = paper.7.png; sourceTree = "<group>"; };
+		EE44BBCD2C0C974F008D4ACA /* rock.1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rock.1.png; sourceTree = "<group>"; };
+		EE44BBCE2C0C974F008D4ACA /* rock.2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rock.2.png; sourceTree = "<group>"; };
+		EE44BBCF2C0C974F008D4ACA /* rock.3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rock.3.png; sourceTree = "<group>"; };
+		EE44BBD02C0C974F008D4ACA /* rock.4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rock.4.png; sourceTree = "<group>"; };
+		EE44BBD12C0C974F008D4ACA /* rock.5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rock.5.png; sourceTree = "<group>"; };
+		EE44BBD22C0C974F008D4ACA /* rock.6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rock.6.png; sourceTree = "<group>"; };
+		EE44BBD32C0C974F008D4ACA /* rock.7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rock.7.png; sourceTree = "<group>"; };
+		EE44BBD52C0C974F008D4ACA /* scissors.1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = scissors.1.png; sourceTree = "<group>"; };
+		EE44BBD62C0C974F008D4ACA /* scissors.2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = scissors.2.png; sourceTree = "<group>"; };
+		EE44BBD72C0C974F008D4ACA /* scissors.3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = scissors.3.png; sourceTree = "<group>"; };
+		EE44BBD82C0C974F008D4ACA /* scissors.4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = scissors.4.png; sourceTree = "<group>"; };
+		EE44BBD92C0C974F008D4ACA /* scissors.5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = scissors.5.png; sourceTree = "<group>"; };
+		EE44BBDA2C0C974F008D4ACA /* scissors.6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = scissors.6.png; sourceTree = "<group>"; };
+		EE44BBDB2C0C974F008D4ACA /* scissors.7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = scissors.7.png; sourceTree = "<group>"; };
+		EE44BBDF2C0C974F008D4ACA /* paper.1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = paper.1.png; sourceTree = "<group>"; };
+		EE44BBE02C0C974F008D4ACA /* paper.2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = paper.2.png; sourceTree = "<group>"; };
+		EE44BBE12C0C974F008D4ACA /* paper.3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = paper.3.png; sourceTree = "<group>"; };
+		EE44BBE32C0C974F008D4ACA /* rock.1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rock.1.png; sourceTree = "<group>"; };
+		EE44BBE42C0C974F008D4ACA /* rock.2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rock.2.png; sourceTree = "<group>"; };
+		EE44BBE52C0C974F008D4ACA /* rock.3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rock.3.png; sourceTree = "<group>"; };
+		EE44BBE72C0C974F008D4ACA /* scissors.1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = scissors.1.png; sourceTree = "<group>"; };
+		EE44BBE82C0C974F008D4ACA /* scissors.2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = scissors.2.png; sourceTree = "<group>"; };
+		EE44BBE92C0C974F008D4ACA /* scissors.3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = scissors.3.png; sourceTree = "<group>"; };
+		EE44BBEC2C0C974F008D4ACA /* paper.1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = paper.1.png; sourceTree = "<group>"; };
+		EE44BBED2C0C974F008D4ACA /* paper.2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = paper.2.png; sourceTree = "<group>"; };
+		EE44BBEE2C0C974F008D4ACA /* paper.3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = paper.3.png; sourceTree = "<group>"; };
+		EE44BBF02C0C974F008D4ACA /* rock.1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rock.1.png; sourceTree = "<group>"; };
+		EE44BBF12C0C974F008D4ACA /* rock.2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rock.2.png; sourceTree = "<group>"; };
+		EE44BBF32C0C974F008D4ACA /* scissors.1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = scissors.1.png; sourceTree = "<group>"; };
+		EE44BBF42C0C974F008D4ACA /* scissors.2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = scissors.2.png; sourceTree = "<group>"; };
+		EE44BBF52C0C974F008D4ACA /* scissors.3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = scissors.3.png; sourceTree = "<group>"; };
+		EE44BBF62C0C974F008D4ACA /* scissors.4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = scissors.4.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EE44BA362C0C77F4008D4ACA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE44BA532C0C7936008D4ACA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE44BA652C0C7967008D4ACA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EE44BA302C0C77F4008D4ACA = {
+			isa = PBXGroup;
+			children = (
+				EE44BA3B2C0C77F4008D4ACA /* RecognizingGesturesMachineLearning */,
+				EE44BA572C0C7936008D4ACA /* Debug */,
+				EE44BA692C0C7968008D4ACA /* MLTraining */,
+				EE44BA3A2C0C77F4008D4ACA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EE44BA3A2C0C77F4008D4ACA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EE44BA392C0C77F4008D4ACA /* RecognizingGesturesMachineLearning.app */,
+				EE44BA562C0C7936008D4ACA /* Debug.app */,
+				EE44BA682C0C7967008D4ACA /* MLTraining.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EE44BA3B2C0C77F4008D4ACA /* RecognizingGesturesMachineLearning */ = {
+			isa = PBXGroup;
+			children = (
+				EE44BA4A2C0C7825008D4ACA /* Camera */,
+				EE44BA4B2C0C7899008D4ACA /* Models */,
+				EE44BA4C2C0C789E008D4ACA /* Resources */,
+				EE44BA4D2C0C78A9008D4ACA /* Support */,
+				EE44BA4E2C0C78AF008D4ACA /* Views */,
+				EE44BA3C2C0C77F4008D4ACA /* RecognizingGesturesMachineLearningApp.swift */,
+				EE44BA402C0C77F5008D4ACA /* Assets.xcassets */,
+				EE44BA422C0C77F5008D4ACA /* Preview Content */,
+			);
+			path = RecognizingGesturesMachineLearning;
+			sourceTree = "<group>";
+		};
+		EE44BA422C0C77F5008D4ACA /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				EE44BA432C0C77F5008D4ACA /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		EE44BA4A2C0C7825008D4ACA /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				EE44BA7F2C0C927D008D4ACA /* Camera.swift */,
+				EE44BA812C0C9283008D4ACA /* MLCamera.swift */,
+			);
+			path = Camera;
+			sourceTree = "<group>";
+		};
+		EE44BA4B2C0C7899008D4ACA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EE44BA832C0C92CE008D4ACA /* AppModel.swift */,
+				EE44BA852C0C92DB008D4ACA /* GameModel.swift */,
+				EE44BA872C0C92EB008D4ACA /* GameMove.swift */,
+				EE44BA892C0C92FE008D4ACA /* HandPoseMLModel.swift */,
+				EE44BA8B2C0C9356008D4ACA /* Metrics.swift */,
+				EE44BA8D2C0C9368008D4ACA /* PhotoPickerDataModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		EE44BA4C2C0C789E008D4ACA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EE44BA502C0C78EE008D4ACA /* rockpaperscissors.mlmodel */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		EE44BA4D2C0C78A9008D4ACA /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				EE44BA8F2C0C937D008D4ACA /* Colors.swift */,
+				EE44BA912C0C939F008D4ACA /* HandPoseUtils.swift */,
+				EE44BA932C0C93AD008D4ACA /* Styles.swift */,
+				EE44BA952C0C93BB008D4ACA /* URLHelper.swift */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		EE44BA4E2C0C78AF008D4ACA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EE44BA4F2C0C78B3008D4ACA /* Other */,
+				EE44BA9F2C0C9481008D4ACA /* CameraView.swift */,
+				EE44BA3E2C0C77F4008D4ACA /* ContentView.swift */,
+				EE44BAA12C0C9498008D4ACA /* MoveView.swift */,
+				EE44BAA32C0C94AB008D4ACA /* RPSGameView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		EE44BA4F2C0C78B3008D4ACA /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				EE44BA972C0C93DF008D4ACA /* CameraFrameOverlay.swift */,
+				EE44BA992C0C93F1008D4ACA /* HandPoseNodeOverlay.swift */,
+				EE44BA9B2C0C9405008D4ACA /* PredictionLabelOverlay.swift */,
+				EE44BA9D2C0C9466008D4ACA /* ViewfinderView.swift */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		EE44BA572C0C7936008D4ACA /* Debug */ = {
+			isa = PBXGroup;
+			children = (
+				EE44BA772C0C796F008D4ACA /* Views */,
+				EE44BA582C0C7936008D4ACA /* DebugApp.swift */,
+				EE44BA5C2C0C7938008D4ACA /* Assets.xcassets */,
+				EE44BA5E2C0C7938008D4ACA /* Preview Content */,
+			);
+			path = Debug;
+			sourceTree = "<group>";
+		};
+		EE44BA5E2C0C7938008D4ACA /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				EE44BA5F2C0C7938008D4ACA /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		EE44BA692C0C7968008D4ACA /* MLTraining */ = {
+			isa = PBXGroup;
+			children = (
+				EE44BA792C0C7985008D4ACA /* Models */,
+				EE44BA7A2C0C798F008D4ACA /* Resources */,
+				EE44BA7B2C0C7994008D4ACA /* Support */,
+				EE44BA7C2C0C7999008D4ACA /* Views */,
+				EE44BA6A2C0C7968008D4ACA /* MLTrainingApp.swift */,
+				EE44BA6E2C0C7969008D4ACA /* Assets.xcassets */,
+				EE44BA732C0C7969008D4ACA /* MLTraining.entitlements */,
+				EE44BA702C0C7969008D4ACA /* Preview Content */,
+			);
+			path = MLTraining;
+			sourceTree = "<group>";
+		};
+		EE44BA702C0C7969008D4ACA /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				EE44BA712C0C7969008D4ACA /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		EE44BA772C0C796F008D4ACA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EE44BA782C0C7973008D4ACA /* Other */,
+				EE44BA5A2C0C7936008D4ACA /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		EE44BA782C0C7973008D4ACA /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				EE44BAA52C0C94D4008D4ACA /* MLModelListView.swift */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		EE44BA792C0C7985008D4ACA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EE44BAA72C0C9505008D4ACA /* Dataset.swift */,
+				EE44BAA92C0C9511008D4ACA /* HandPoseTrainer.swift */,
+				EE44BAAB2C0C951E008D4ACA /* TrainerDataModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		EE44BA7A2C0C798F008D4ACA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EE44BBFA2C0C974F008D4ACA /* Dataset */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		EE44BA7B2C0C7994008D4ACA /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				EE44BB662C0C9564008D4ACA /* HandPoseTrainerExtension.swift */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		EE44BA7C2C0C7999008D4ACA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EE44BA7D2C0C79AF008D4ACA /* Other */,
+				EE44BA6C2C0C7968008D4ACA /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		EE44BA7D2C0C79AF008D4ACA /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				EE44BB682C0C9573008D4ACA /* CellView.swift */,
+				EE44BB6A2C0C9580008D4ACA /* DatasetImage.swift */,
+				EE44BB6C2C0C958B008D4ACA /* TrainingDatasetCell.swift */,
+				EE44BB6E2C0C9598008D4ACA /* TrainingDatasetImageGrid.swift */,
+				EE44BB702C0C95A8008D4ACA /* TrainingView.swift */,
+				EE44BB722C0C95B7008D4ACA /* ValidationDatasetImageGrid.swift */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		EE44BB9A2C0C974F008D4ACA /* Paper */ = {
+			isa = PBXGroup;
+			children = (
+				EE44BB932C0C974F008D4ACA /* paper.1.png */,
+				EE44BB942C0C974F008D4ACA /* paper.2.png */,
+				EE44BB952C0C974F008D4ACA /* paper.3.png */,
+				EE44BB962C0C974F008D4ACA /* paper.4.png */,
+				EE44BB972C0C974F008D4ACA /* paper.5.png */,
+				EE44BB982C0C974F008D4ACA /* paper.6.png */,
+				EE44BB992C0C974F008D4ACA /* paper.7.png */,
+			);
+			path = Paper;
+			sourceTree = "<group>";
+		};
+		EE44BBA22C0C974F008D4ACA /* Rock */ = {
+			isa = PBXGroup;
+			children = (
+				EE44BB9B2C0C974F008D4ACA /* rock.1.png */,
+				EE44BB9C2C0C974F008D4ACA /* rock.2.png */,
+				EE44BB9D2C0C974F008D4ACA /* rock.3.png */,
+				EE44BB9E2C0C974F008D4ACA /* rock.4.PNG */,
+				EE44BB9F2C0C974F008D4ACA /* rock.5.png */,
+				EE44BBA02C0C974F008D4ACA /* rock.6.png */,
+				EE44BBA12C0C974F008D4ACA /* rock.7.png */,
+			);
+			path = Rock;
+			sourceTree = "<group>";
+		};
+		EE44BBAA2C0C974F008D4ACA /* Scissors */ = {
+			isa = PBXGroup;
+			children = (
+				EE44BBA32C0C974F008D4ACA /* scissors.1.png */,
+				EE44BBA42C0C974F008D4ACA /* scissors.2.png */,
+				EE44BBA52C0C974F008D4ACA /* scissors.3.png */,
+				EE44BBA62C0C974F008D4ACA /* scissors.4.png */,
+				EE44BBA72C0C974F008D4ACA /* scissors.5.png */,
+				EE44BBA82C0C974F008D4ACA /* scissors.6.png */,
+				EE44BBA92C0C974F008D4ACA /* scissors.7.png */,
+			);
+			path = Scissors;
+			sourceTree = "<group>";
+		};
+		EE44BBAB2C0C974F008D4ACA /* RPSDataset-1 */ = {
+			isa = PBXGroup;
+			children = (
+				EE44BB9A2C0C974F008D4ACA /* Paper */,
+				EE44BBA22C0C974F008D4ACA /* Rock */,
+				EE44BBAA2C0C974F008D4ACA /* Scissors */,
+			);
+			path = "RPSDataset-1";
+			sourceTree = "<group>";
+		};
+		EE44BBB32C0C974F008D4ACA /* Paper */ = {
+			isa = PBXGroup;
+			children = (
+				EE44BBAC2C0C974F008D4ACA /* paper.1.png */,
+				EE44BBAD2C0C974F008D4ACA /* paper.2.png */,
+				EE44BBAE2C0C974F008D4ACA /* paper.3.png */,
+				EE44BBAF2C0C974F008D4ACA /* paper.4.png */,
+				EE44BBB02C0C974F008D4ACA /* paper.5.png */,
+				EE44BBB12C0C974F008D4ACA /* paper.6.png */,
+				EE44BBB22C0C974F008D4ACA /* paper.7.png */,
+			);
+			path = Paper;
+			sourceTree = "<group>";
+		};
+		EE44BBBB2C0C974F008D4ACA /* Rock */ = {
+			isa = PBXGroup;
+			children = (
+				EE44BBB42C0C974F008D4ACA /* rock.1.png */,
+				EE44BBB52C0C974F008D4ACA /* rock.2.png */,
+				EE44BBB62C0C974F008D4ACA /* rock.3.png */,
+				EE44BBB72C0C974F008D4ACA /* rock.4.png */,
+				EE44BBB82C0C974F008D4ACA /* rock.5.png */,
+				EE44BBB92C0C974F008D4ACA /* rock.6.png */,
+				EE44BBBA2C0C974F008D4ACA /* rock.7.png */,
+			);
+			path = Rock;
+			sourceTree = "<group>";
+		};
+		EE44BBC32C0C974F008D4ACA /* Scissors */ = {
+			isa = PBXGroup;
+			children = (
+				EE44BBBC2C0C974F008D4ACA /* scissors.1.png */,
+				EE44BBBD2C0C974F008D4ACA /* scissors.2.png */,
+				EE44BBBE2C0C974F008D4ACA /* scissors.3.png */,
+				EE44BBBF2C0C974F008D4ACA /* scissors.4.png */,
+				EE44BBC02C0C974F008D4ACA /* scissors.5.png */,
+				EE44BBC12C0C974F008D4ACA /* scissors.6.png */,
+				EE44BBC22C0C974F008D4ACA /* scissors.7.png */,
+			);
+			path = Scissors;
+			sourceTree = "<group>";
+		};
+		EE44BBC42C0C974F008D4ACA /* RPSDataset-2 */ = {
+			isa = PBXGroup;
+			children = (
+				EE44BBB32C0C974F008D4ACA /* Paper */,
+				EE44BBBB2C0C974F008D4ACA /* Rock */,
+				EE44BBC32C0C974F008D4ACA /* Scissors */,
+			);
+			path = "RPSDataset-2";
+			sourceTree = "<group>";
+		};
+		EE44BBCC2C0C974F008D4ACA /* Paper */ = {
+			isa = PBXGroup;
+			children = (
+				EE44BBC52C0C974F008D4ACA /* paper.1.png */,
+				EE44BBC62C0C974F008D4ACA /* paper.2.png */,
+				EE44BBC72C0C974F008D4ACA /* paper.3.png */,
+				EE44BBC82C0C974F008D4ACA /* paper.4.png */,
+				EE44BBC92C0C974F008D4ACA /* paper.5.png */,
+				EE44BBCA2C0C974F008D4ACA /* paper.6.png */,
+				EE44BBCB2C0C974F008D4ACA /* paper.7.png */,
+			);
+			path = Paper;
+			sourceTree = "<group>";
+		};
+		EE44BBD42C0C974F008D4ACA /* Rock */ = {
+			isa = PBXGroup;
+			children = (
+				EE44BBCD2C0C974F008D4ACA /* rock.1.png */,
+				EE44BBCE2C0C974F008D4ACA /* rock.2.png */,
+				EE44BBCF2C0C974F008D4ACA /* rock.3.png */,
+				EE44BBD02C0C974F008D4ACA /* rock.4.png */,
+				EE44BBD12C0C974F008D4ACA /* rock.5.png */,
+				EE44BBD22C0C974F008D4ACA /* rock.6.png */,
+				EE44BBD32C0C974F008D4ACA /* rock.7.png */,
+			);
+			path = Rock;
+			sourceTree = "<group>";
+		};
+		EE44BBDC2C0C974F008D4ACA /* Scissors */ = {
+			isa = PBXGroup;
+			children = (
+				EE44BBD52C0C974F008D4ACA /* scissors.1.png */,
+				EE44BBD62C0C974F008D4ACA /* scissors.2.png */,
+				EE44BBD72C0C974F008D4ACA /* scissors.3.png */,
+				EE44BBD82C0C974F008D4ACA /* scissors.4.png */,
+				EE44BBD92C0C974F008D4ACA /* scissors.5.png */,
+				EE44BBDA2C0C974F008D4ACA /* scissors.6.png */,
+				EE44BBDB2C0C974F008D4ACA /* scissors.7.png */,
+			);
+			path = Scissors;
+			sourceTree = "<group>";
+		};
+		EE44BBDD2C0C974F008D4ACA /* RPSDataset-3 */ = {
+			isa = PBXGroup;
+			children = (
+				EE44BBCC2C0C974F008D4ACA /* Paper */,
+				EE44BBD42C0C974F008D4ACA /* Rock */,
+				EE44BBDC2C0C974F008D4ACA /* Scissors */,
+			);
+			path = "RPSDataset-3";
+			sourceTree = "<group>";
+		};
+		EE44BBDE2C0C974F008D4ACA /* Training */ = {
+			isa = PBXGroup;
+			children = (
+				EE44BBAB2C0C974F008D4ACA /* RPSDataset-1 */,
+				EE44BBC42C0C974F008D4ACA /* RPSDataset-2 */,
+				EE44BBDD2C0C974F008D4ACA /* RPSDataset-3 */,
+			);
+			path = Training;
+			sourceTree = "<group>";
+		};
+		EE44BBE22C0C974F008D4ACA /* Paper */ = {
+			isa = PBXGroup;
+			children = (
+				EE44BBDF2C0C974F008D4ACA /* paper.1.png */,
+				EE44BBE02C0C974F008D4ACA /* paper.2.png */,
+				EE44BBE12C0C974F008D4ACA /* paper.3.png */,
+			);
+			path = Paper;
+			sourceTree = "<group>";
+		};
+		EE44BBE62C0C974F008D4ACA /* Rock */ = {
+			isa = PBXGroup;
+			children = (
+				EE44BBE32C0C974F008D4ACA /* rock.1.png */,
+				EE44BBE42C0C974F008D4ACA /* rock.2.png */,
+				EE44BBE52C0C974F008D4ACA /* rock.3.png */,
+			);
+			path = Rock;
+			sourceTree = "<group>";
+		};
+		EE44BBEA2C0C974F008D4ACA /* Scissors */ = {
+			isa = PBXGroup;
+			children = (
+				EE44BBE72C0C974F008D4ACA /* scissors.1.png */,
+				EE44BBE82C0C974F008D4ACA /* scissors.2.png */,
+				EE44BBE92C0C974F008D4ACA /* scissors.3.png */,
+			);
+			path = Scissors;
+			sourceTree = "<group>";
+		};
+		EE44BBEB2C0C974F008D4ACA /* TestDataset-1 */ = {
+			isa = PBXGroup;
+			children = (
+				EE44BBE22C0C974F008D4ACA /* Paper */,
+				EE44BBE62C0C974F008D4ACA /* Rock */,
+				EE44BBEA2C0C974F008D4ACA /* Scissors */,
+			);
+			path = "TestDataset-1";
+			sourceTree = "<group>";
+		};
+		EE44BBEF2C0C974F008D4ACA /* Paper */ = {
+			isa = PBXGroup;
+			children = (
+				EE44BBEC2C0C974F008D4ACA /* paper.1.png */,
+				EE44BBED2C0C974F008D4ACA /* paper.2.png */,
+				EE44BBEE2C0C974F008D4ACA /* paper.3.png */,
+			);
+			path = Paper;
+			sourceTree = "<group>";
+		};
+		EE44BBF22C0C974F008D4ACA /* Rock */ = {
+			isa = PBXGroup;
+			children = (
+				EE44BBF02C0C974F008D4ACA /* rock.1.png */,
+				EE44BBF12C0C974F008D4ACA /* rock.2.png */,
+			);
+			path = Rock;
+			sourceTree = "<group>";
+		};
+		EE44BBF72C0C974F008D4ACA /* Scissors */ = {
+			isa = PBXGroup;
+			children = (
+				EE44BBF32C0C974F008D4ACA /* scissors.1.png */,
+				EE44BBF42C0C974F008D4ACA /* scissors.2.png */,
+				EE44BBF52C0C974F008D4ACA /* scissors.3.png */,
+				EE44BBF62C0C974F008D4ACA /* scissors.4.png */,
+			);
+			path = Scissors;
+			sourceTree = "<group>";
+		};
+		EE44BBF82C0C974F008D4ACA /* TestDataset-2 */ = {
+			isa = PBXGroup;
+			children = (
+				EE44BBEF2C0C974F008D4ACA /* Paper */,
+				EE44BBF22C0C974F008D4ACA /* Rock */,
+				EE44BBF72C0C974F008D4ACA /* Scissors */,
+			);
+			path = "TestDataset-2";
+			sourceTree = "<group>";
+		};
+		EE44BBF92C0C974F008D4ACA /* Validation */ = {
+			isa = PBXGroup;
+			children = (
+				EE44BBEB2C0C974F008D4ACA /* TestDataset-1 */,
+				EE44BBF82C0C974F008D4ACA /* TestDataset-2 */,
+			);
+			path = Validation;
+			sourceTree = "<group>";
+		};
+		EE44BBFA2C0C974F008D4ACA /* Dataset */ = {
+			isa = PBXGroup;
+			children = (
+				EE44BBDE2C0C974F008D4ACA /* Training */,
+				EE44BBF92C0C974F008D4ACA /* Validation */,
+			);
+			path = Dataset;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EE44BA382C0C77F4008D4ACA /* RecognizingGesturesMachineLearning */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EE44BA472C0C77F5008D4ACA /* Build configuration list for PBXNativeTarget "RecognizingGesturesMachineLearning" */;
+			buildPhases = (
+				EE44BA352C0C77F4008D4ACA /* Sources */,
+				EE44BA362C0C77F4008D4ACA /* Frameworks */,
+				EE44BA372C0C77F4008D4ACA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RecognizingGesturesMachineLearning;
+			productName = RecognizingGesturesMachineLearning;
+			productReference = EE44BA392C0C77F4008D4ACA /* RecognizingGesturesMachineLearning.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EE44BA552C0C7936008D4ACA /* Debug */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EE44BA612C0C7938008D4ACA /* Build configuration list for PBXNativeTarget "Debug" */;
+			buildPhases = (
+				EE44BA522C0C7936008D4ACA /* Sources */,
+				EE44BA532C0C7936008D4ACA /* Frameworks */,
+				EE44BA542C0C7936008D4ACA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Debug;
+			productName = Debug;
+			productReference = EE44BA562C0C7936008D4ACA /* Debug.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EE44BA672C0C7967008D4ACA /* MLTraining */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EE44BA742C0C7969008D4ACA /* Build configuration list for PBXNativeTarget "MLTraining" */;
+			buildPhases = (
+				EE44BA642C0C7967008D4ACA /* Sources */,
+				EE44BA652C0C7967008D4ACA /* Frameworks */,
+				EE44BA662C0C7967008D4ACA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MLTraining;
+			productName = MLTraining;
+			productReference = EE44BA682C0C7967008D4ACA /* MLTraining.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EE44BA312C0C77F4008D4ACA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					EE44BA382C0C77F4008D4ACA = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					EE44BA552C0C7936008D4ACA = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					EE44BA672C0C7967008D4ACA = {
+						CreatedOnToolsVersion = 15.4;
+					};
+				};
+			};
+			buildConfigurationList = EE44BA342C0C77F4008D4ACA /* Build configuration list for PBXProject "RecognizingGesturesMachineLearning" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EE44BA302C0C77F4008D4ACA;
+			productRefGroup = EE44BA3A2C0C77F4008D4ACA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EE44BA382C0C77F4008D4ACA /* RecognizingGesturesMachineLearning */,
+				EE44BA552C0C7936008D4ACA /* Debug */,
+				EE44BA672C0C7967008D4ACA /* MLTraining */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EE44BA372C0C77F4008D4ACA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE44BA442C0C77F5008D4ACA /* Preview Assets.xcassets in Resources */,
+				EE44BA412C0C77F5008D4ACA /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE44BA542C0C7936008D4ACA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE44BA602C0C7938008D4ACA /* Preview Assets.xcassets in Resources */,
+				EE44BA5D2C0C7938008D4ACA /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE44BA662C0C7967008D4ACA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE44BC432C0C974F008D4ACA /* paper.1.png in Resources */,
+				EE44BC0D2C0C974F008D4ACA /* scissors.5.png in Resources */,
+				EE44BC272C0C974F008D4ACA /* paper.3.png in Resources */,
+				EE44BBFE2C0C974F008D4ACA /* paper.4.png in Resources */,
+				EE44BC1A2C0C974F008D4ACA /* rock.4.png in Resources */,
+				EE44BC172C0C974F008D4ACA /* rock.1.png in Resources */,
+				EE44BC322C0C974F008D4ACA /* rock.7.png in Resources */,
+				EE44BC342C0C974F008D4ACA /* scissors.2.png in Resources */,
+				EE44BC082C0C974F008D4ACA /* rock.7.png in Resources */,
+				EE44BC072C0C974F008D4ACA /* rock.6.png in Resources */,
+				EE44BC412C0C974F008D4ACA /* scissors.2.png in Resources */,
+				EE44BC332C0C974F008D4ACA /* scissors.1.png in Resources */,
+				EE44BC4B2C0C974F008D4ACA /* scissors.4.png in Resources */,
+				EE44BC1D2C0C974F008D4ACA /* rock.7.png in Resources */,
+				EE44BC4A2C0C974F008D4ACA /* scissors.3.png in Resources */,
+				EE44BC042C0C974F008D4ACA /* rock.3.png in Resources */,
+				EE44BC2D2C0C974F008D4ACA /* rock.2.png in Resources */,
+				EE44BC462C0C974F008D4ACA /* rock.1.png in Resources */,
+				EE44BC022C0C974F008D4ACA /* rock.1.png in Resources */,
+				EE44BC132C0C974F008D4ACA /* paper.4.png in Resources */,
+				EE44BC052C0C974F008D4ACA /* rock.4.PNG in Resources */,
+				EE44BC442C0C974F008D4ACA /* paper.2.png in Resources */,
+				EE44BC2E2C0C974F008D4ACA /* rock.3.png in Resources */,
+				EE44BC202C0C974F008D4ACA /* scissors.3.png in Resources */,
+				EE44BC122C0C974F008D4ACA /* paper.3.png in Resources */,
+				EE44BC352C0C974F008D4ACA /* scissors.3.png in Resources */,
+				EE44BC1F2C0C974F008D4ACA /* scissors.2.png in Resources */,
+				EE44BC372C0C974F008D4ACA /* scissors.5.png in Resources */,
+				EE44BC2C2C0C974F008D4ACA /* rock.1.png in Resources */,
+				EE44BC162C0C974F008D4ACA /* paper.7.png in Resources */,
+				EE44BC252C0C974F008D4ACA /* paper.1.png in Resources */,
+				EE44BC0A2C0C974F008D4ACA /* scissors.2.png in Resources */,
+				EE44BC3E2C0C974F008D4ACA /* rock.2.png in Resources */,
+				EE44BC182C0C974F008D4ACA /* rock.2.png in Resources */,
+				EE44BC3A2C0C974F008D4ACA /* paper.1.png in Resources */,
+				EE44BC312C0C974F008D4ACA /* rock.6.png in Resources */,
+				EE44BC032C0C974F008D4ACA /* rock.2.png in Resources */,
+				EE44BC362C0C974F008D4ACA /* scissors.4.png in Resources */,
+				EE44BC382C0C974F008D4ACA /* scissors.6.png in Resources */,
+				EE44BC302C0C974F008D4ACA /* rock.5.png in Resources */,
+				EE44BC422C0C974F008D4ACA /* scissors.3.png in Resources */,
+				EE44BC3D2C0C974F008D4ACA /* rock.1.png in Resources */,
+				EE44BC472C0C974F008D4ACA /* rock.2.png in Resources */,
+				EE44BC482C0C974F008D4ACA /* scissors.1.png in Resources */,
+				EE44BC492C0C974F008D4ACA /* scissors.2.png in Resources */,
+				EE44BC2A2C0C974F008D4ACA /* paper.6.png in Resources */,
+				EE44BBFB2C0C974F008D4ACA /* paper.1.png in Resources */,
+				EE44BC242C0C974F008D4ACA /* scissors.7.png in Resources */,
+				EE44BC1B2C0C974F008D4ACA /* rock.5.png in Resources */,
+				EE44BC002C0C974F008D4ACA /* paper.6.png in Resources */,
+				EE44BC282C0C974F008D4ACA /* paper.4.png in Resources */,
+				EE44BC222C0C974F008D4ACA /* scissors.5.png in Resources */,
+				EE44BC2B2C0C974F008D4ACA /* paper.7.png in Resources */,
+				EE44BC262C0C974F008D4ACA /* paper.2.png in Resources */,
+				EE44BA722C0C7969008D4ACA /* Preview Assets.xcassets in Resources */,
+				EE44BC0E2C0C974F008D4ACA /* scissors.6.png in Resources */,
+				EE44BBFF2C0C974F008D4ACA /* paper.5.png in Resources */,
+				EE44BC192C0C974F008D4ACA /* rock.3.png in Resources */,
+				EE44BC2F2C0C974F008D4ACA /* rock.4.png in Resources */,
+				EE44BC402C0C974F008D4ACA /* scissors.1.png in Resources */,
+				EE44BC062C0C974F008D4ACA /* rock.5.png in Resources */,
+				EE44BC142C0C974F008D4ACA /* paper.5.png in Resources */,
+				EE44BBFC2C0C974F008D4ACA /* paper.2.png in Resources */,
+				EE44BC092C0C974F008D4ACA /* scissors.1.png in Resources */,
+				EE44BC232C0C974F008D4ACA /* scissors.6.png in Resources */,
+				EE44BC1E2C0C974F008D4ACA /* scissors.1.png in Resources */,
+				EE44BC012C0C974F008D4ACA /* paper.7.png in Resources */,
+				EE44BC0F2C0C974F008D4ACA /* scissors.7.png in Resources */,
+				EE44BC1C2C0C974F008D4ACA /* rock.6.png in Resources */,
+				EE44BC0C2C0C974F008D4ACA /* scissors.4.png in Resources */,
+				EE44BC152C0C974F008D4ACA /* paper.6.png in Resources */,
+				EE44BC212C0C974F008D4ACA /* scissors.4.png in Resources */,
+				EE44BC3B2C0C974F008D4ACA /* paper.2.png in Resources */,
+				EE44BC452C0C974F008D4ACA /* paper.3.png in Resources */,
+				EE44BC0B2C0C974F008D4ACA /* scissors.3.png in Resources */,
+				EE44BC102C0C974F008D4ACA /* paper.1.png in Resources */,
+				EE44BC292C0C974F008D4ACA /* paper.5.png in Resources */,
+				EE44BC3C2C0C974F008D4ACA /* paper.3.png in Resources */,
+				EE44BC392C0C974F008D4ACA /* scissors.7.png in Resources */,
+				EE44BBFD2C0C974F008D4ACA /* paper.3.png in Resources */,
+				EE44BC3F2C0C974F008D4ACA /* rock.3.png in Resources */,
+				EE44BA6F2C0C7969008D4ACA /* Assets.xcassets in Resources */,
+				EE44BC112C0C974F008D4ACA /* paper.2.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EE44BA352C0C77F4008D4ACA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE44BA962C0C93BB008D4ACA /* URLHelper.swift in Sources */,
+				EE44BA802C0C927D008D4ACA /* Camera.swift in Sources */,
+				EE44BA942C0C93AD008D4ACA /* Styles.swift in Sources */,
+				EE44BAA22C0C9498008D4ACA /* MoveView.swift in Sources */,
+				EE44BAA02C0C9481008D4ACA /* CameraView.swift in Sources */,
+				EE44BA902C0C937D008D4ACA /* Colors.swift in Sources */,
+				EE44BA842C0C92CE008D4ACA /* AppModel.swift in Sources */,
+				EE44BA9E2C0C9466008D4ACA /* ViewfinderView.swift in Sources */,
+				EE44BA882C0C92EB008D4ACA /* GameMove.swift in Sources */,
+				EE44BA822C0C9283008D4ACA /* MLCamera.swift in Sources */,
+				EE44BA3F2C0C77F4008D4ACA /* ContentView.swift in Sources */,
+				EE44BA512C0C78EE008D4ACA /* rockpaperscissors.mlmodel in Sources */,
+				EE44BA9A2C0C93F1008D4ACA /* HandPoseNodeOverlay.swift in Sources */,
+				EE44BA9C2C0C9405008D4ACA /* PredictionLabelOverlay.swift in Sources */,
+				EE44BA982C0C93DF008D4ACA /* CameraFrameOverlay.swift in Sources */,
+				EE44BA922C0C939F008D4ACA /* HandPoseUtils.swift in Sources */,
+				EE44BA8E2C0C9368008D4ACA /* PhotoPickerDataModel.swift in Sources */,
+				EE44BA8A2C0C92FE008D4ACA /* HandPoseMLModel.swift in Sources */,
+				EE44BAA42C0C94AB008D4ACA /* RPSGameView.swift in Sources */,
+				EE44BA8C2C0C9356008D4ACA /* Metrics.swift in Sources */,
+				EE44BA862C0C92DB008D4ACA /* GameModel.swift in Sources */,
+				EE44BA3D2C0C77F4008D4ACA /* RecognizingGesturesMachineLearningApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE44BA522C0C7936008D4ACA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE44BA5B2C0C7936008D4ACA /* ContentView.swift in Sources */,
+				EE44BB7A2C0C95DE008D4ACA /* AppModel.swift in Sources */,
+				EE44BB7B2C0C95DE008D4ACA /* GameMove.swift in Sources */,
+				EE44BB902C0C965E008D4ACA /* CameraView.swift in Sources */,
+				EE44BB7C2C0C95DE008D4ACA /* HandPoseMLModel.swift in Sources */,
+				EE44BB7D2C0C95DE008D4ACA /* Metrics.swift in Sources */,
+				EE44BB822C0C95E3008D4ACA /* MLCamera.swift in Sources */,
+				EE44BB832C0C95E3008D4ACA /* Camera.swift in Sources */,
+				EE44BB7E2C0C95DE008D4ACA /* GameModel.swift in Sources */,
+				EE44BB7F2C0C95DE008D4ACA /* PhotoPickerDataModel.swift in Sources */,
+				EE44BA592C0C7936008D4ACA /* DebugApp.swift in Sources */,
+				EE44BB882C0C95E9008D4ACA /* Colors.swift in Sources */,
+				EE44BB892C0C95E9008D4ACA /* Styles.swift in Sources */,
+				EE44BB8A2C0C95E9008D4ACA /* URLHelper.swift in Sources */,
+				EE44BB8B2C0C95E9008D4ACA /* HandPoseUtils.swift in Sources */,
+				EE44BB8C2C0C9637008D4ACA /* HandPoseNodeOverlay.swift in Sources */,
+				EE44BB8D2C0C9637008D4ACA /* CameraFrameOverlay.swift in Sources */,
+				EE44BB8E2C0C9637008D4ACA /* ViewfinderView.swift in Sources */,
+				EE44BB8F2C0C9637008D4ACA /* PredictionLabelOverlay.swift in Sources */,
+				EE44BAA62C0C94D4008D4ACA /* MLModelListView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE44BA642C0C7967008D4ACA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE44BB912C0C969E008D4ACA /* MLCamera.swift in Sources */,
+				EE44BB922C0C969E008D4ACA /* Camera.swift in Sources */,
+				EE44BAA82C0C9505008D4ACA /* Dataset.swift in Sources */,
+				EE44BB742C0C95DE008D4ACA /* AppModel.swift in Sources */,
+				EE44BB752C0C95DE008D4ACA /* GameMove.swift in Sources */,
+				EE44BB762C0C95DE008D4ACA /* HandPoseMLModel.swift in Sources */,
+				EE44BB772C0C95DE008D4ACA /* Metrics.swift in Sources */,
+				EE44BB782C0C95DE008D4ACA /* GameModel.swift in Sources */,
+				EE44BB792C0C95DE008D4ACA /* PhotoPickerDataModel.swift in Sources */,
+				EE44BA6D2C0C7968008D4ACA /* ContentView.swift in Sources */,
+				EE44BB732C0C95B7008D4ACA /* ValidationDatasetImageGrid.swift in Sources */,
+				EE44BB712C0C95A8008D4ACA /* TrainingView.swift in Sources */,
+				EE44BA6B2C0C7968008D4ACA /* MLTrainingApp.swift in Sources */,
+				EE44BB842C0C95E8008D4ACA /* Colors.swift in Sources */,
+				EE44BB852C0C95E8008D4ACA /* Styles.swift in Sources */,
+				EE44BB862C0C95E8008D4ACA /* URLHelper.swift in Sources */,
+				EE44BB872C0C95E8008D4ACA /* HandPoseUtils.swift in Sources */,
+				EE44BAAA2C0C9511008D4ACA /* HandPoseTrainer.swift in Sources */,
+				EE44BAAC2C0C951E008D4ACA /* TrainerDataModel.swift in Sources */,
+				EE44BB672C0C9564008D4ACA /* HandPoseTrainerExtension.swift in Sources */,
+				EE44BB6F2C0C9598008D4ACA /* TrainingDatasetImageGrid.swift in Sources */,
+				EE44BB6D2C0C958B008D4ACA /* TrainingDatasetCell.swift in Sources */,
+				EE44BB6B2C0C9580008D4ACA /* DatasetImage.swift in Sources */,
+				EE44BB692C0C9573008D4ACA /* CellView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		EE44BA452C0C77F5008D4ACA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EE44BA462C0C77F5008D4ACA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EE44BA482C0C77F5008D4ACA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"RecognizingGesturesMachineLearning/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "$(PRODUCT_NAME) uses camera";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.RecognizingGesturesMachineLearning";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EE44BA492C0C77F5008D4ACA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"RecognizingGesturesMachineLearning/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "$(PRODUCT_NAME) uses camera";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.RecognizingGesturesMachineLearning";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EE44BA622C0C7938008D4ACA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Debug/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "$(PRODUCT_NAME) uses camera";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.Debug";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EE44BA632C0C7938008D4ACA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Debug/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "$(PRODUCT_NAME) uses camera";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.Debug";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EE44BA752C0C7969008D4ACA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MLTraining/MLTraining.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MLTraining/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.MLTraining";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		EE44BA762C0C7969008D4ACA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MLTraining/MLTraining.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MLTraining/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.apple-samplecode.MLTraining";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EE44BA342C0C77F4008D4ACA /* Build configuration list for PBXProject "RecognizingGesturesMachineLearning" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE44BA452C0C77F5008D4ACA /* Debug */,
+				EE44BA462C0C77F5008D4ACA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EE44BA472C0C77F5008D4ACA /* Build configuration list for PBXNativeTarget "RecognizingGesturesMachineLearning" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE44BA482C0C77F5008D4ACA /* Debug */,
+				EE44BA492C0C77F5008D4ACA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EE44BA612C0C7938008D4ACA /* Build configuration list for PBXNativeTarget "Debug" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE44BA622C0C7938008D4ACA /* Debug */,
+				EE44BA632C0C7938008D4ACA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EE44BA742C0C7969008D4ACA /* Build configuration list for PBXNativeTarget "MLTraining" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE44BA752C0C7969008D4ACA /* Debug */,
+				EE44BA762C0C7969008D4ACA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EE44BA312C0C77F4008D4ACA /* Project object */;
+}
